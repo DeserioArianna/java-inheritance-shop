@@ -15,7 +15,7 @@ public class Smartphone extends Prodotto {
         return imei;
     }
 
-    public int memoria() {
+    public int getMemoria() {
         return memoria;
     }
 
@@ -25,5 +25,10 @@ public class Smartphone extends Prodotto {
         } else {
             System.out.println("Il numero di memoria deve essere maggiore di 0");
         }
+    }
+
+    @Override
+    public String toString() {
+        return "Smartphone: " + getNome() + " Marca: " + getMarca() + " Prezzo: " + getPrezzo() + "€ " + " Iva: " + getIva() + " Memoria: " + getMemoria() + "GB";
     }
 }

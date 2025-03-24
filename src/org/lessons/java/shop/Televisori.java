@@ -37,6 +37,11 @@ public class Televisori  extends Prodotto {
     public void setSmart(boolean smart) {
         this.smart = smart;
     }
+
+    @Override
+    public String toString() {
+        return "Televisore: " + getNome() + " Marca: " + getMarca() + " Prezzo: " + getPrezzo() + "€ " + " Iva: " + getIva() + " Pollici: " + getPollici() + " " + isSmart();
+    }
 }
 
 
